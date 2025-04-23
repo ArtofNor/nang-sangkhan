@@ -1,0 +1,121 @@
+/*
+Theme Name: Nang Sangkhan
+Theme URI: https://nangsangkhan.com
+Author: Your Name
+Author URI: https://nangsangkhan.com
+Description: A custom theme for the Nang Sangkhan Sisters website, featuring character profiles, stories, and calendar functionality.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: nangsangkhan
+*/
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Header styles */
+.site-header {
+    background-color: #f8f8f8;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.site-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-navigation {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+.main-navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main-navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Content area */
+.site-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Character grid */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.character-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+}
+
+.character-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.character-info {
+    padding: 1rem;
+}
+
+/* Calendar section */
+.calendar-section {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-navigation ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .site-content {
+        padding: 1rem;
+    }
+} 
